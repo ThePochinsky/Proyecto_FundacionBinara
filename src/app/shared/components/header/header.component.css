@@ -23,13 +23,20 @@ button {
   cursor: pointer;
 }
 
+.logo {
+  width: 180px;
+  margin-bottom: 15px;
+}
+
 .navbar {
-  height: 90px;
-  background-color: #1a1a1a;
-  padding: 20px 40px;
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 40px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .navbar .logo i {
@@ -40,7 +47,7 @@ button {
 .navbar .logo a {
   font-size: 24px;
   font-weight: 700;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-left: 12px;
 }
 
@@ -59,19 +66,19 @@ button {
 
 .menu-links a {
   font-weight: 500;
-  color: #999999;
+  color: #ffffff;
   padding: 8px 16px;
 }
 
 .menu-links a:hover {
-  color: white;
+  color: rgb(180, 179, 179);
 }
 
 .log-in {
   font-weight: 500;
   padding: 12px 22px;
   background-color: transparent;
-  color: #999999;
+  color: #ffffff;
   border-radius: 10px;
   border: 2px solid #0aa5ff;
   transition: 0.2s;
@@ -87,6 +94,10 @@ button {
   color: white;
   display: none;
   cursor: pointer;
+}
+
+.subtitle{
+  color: #0aa5ff;
 }
 
 @media (max-width: 53rem) {

@@ -1,101 +1,96 @@
-
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap");
 
 html {
-    font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 footer {
-    background: #0E1219;
-    color: white;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
+  background: #0e1219;
+  color: white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  bottom: 0px;
 }
 
 .footer-top-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 48px;
-    margin: 0 auto;
-    padding: 16px;
-    min-height: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 48px;
+  margin: 0 auto;
+  padding: 16px;
+  min-height: 140px;
 }
 
 .footer-top-wrapper > section {
-    width: 180px;
+  width: 180px;
 }
 
 h2 {
-    text-align: left;
-    color: #d2d0e6;
-    margin-top: 0px;
-    margin-bottom: 16px;
-    opacity: 0.7;
-    font-size: 16px;
-    font-weight: 600;
+  text-align: left;
+  color: #d2d0e6;
+  margin-top: 0px;
+  margin-bottom: 16px;
+  opacity: 0.7;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 menu li {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
-
 .logo {
-    width: 170px;
-    margin-bottom: 15px;
+  width: 160px;
+  height: 90px;
+  margin-bottom: 15px;
 }
 
 .social-links {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    width: 180px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  width: 180px;
 }
 
 .social-links img {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .footer-top {
-    max-width: 800px;
+  max-width: 800px;
 }
 .footer-top li i {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 .custom-link {
-    color: #f9f9f9; /* Cambia #00FF00 al color que desees */
+  color: #f9f9f9; /* Cambia #00FF00 al color que desees */
 }
 
-
 .footer-bottom {
-    height: 60px;
-    margin-top: 3px;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    background-color: #1f1b3d;
-    padding: 4px;
+  height: 60px;
+  margin-top: 3px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #1f1b3d;
+  padding: 4px;
 }
 
 .footer-bottom > small {
-    font-size: 16px;
-    margin: 0 4px;
+  font-size: 16px;
+  margin: 0 4px;
 }
