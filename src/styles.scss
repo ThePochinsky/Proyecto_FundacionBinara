@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import '../src/app/core/styles/global-styles.scss';
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $fuente_principal;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  margin: 0;
+}
