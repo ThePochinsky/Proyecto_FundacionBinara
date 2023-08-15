@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isMenuOpen: boolean = false;
+
   ngOnInit() { }
 
   selectedLink: string = ''; // Enlace seleccionado
@@ -23,5 +25,38 @@ export class HeaderComponent implements OnInit {
   changeBackground(link: string): void {
     this.selectedLink = link;
   }
+
+  /*  toggleMenu() {
+     this.isMenuOpen = !this.isMenuOpen;
+   } */
+
+  toggleMenu() {
+    
+    const navigation = document.querySelector('.menu-links');
+    const burgerMenu = document.querySelector(".menu-icon");
+
+    const src = burgerMenu?.getAttribute('src');
+
+    const isBurger = src === 'burger-menu.svg';
+    const iconName = isBurger ?
+      'close.svg' :
+      'burger-menu.svg';
+    burgerMenu?.setAttribute(
+      'src', iconName
+    );
+
+    if (!isBurger) {
+      navigation?.classList.add("navigation--mobile--fadeout");
+      setTimeout(() => {
+        navigation?.classList.toggle(
+          'navigation--mobile'
+        );
+      }, 300)
+    } else {
+      navigation?.classList.remove("navigation--mobile--fadeout");
+      navigation?.classList.toggle(
+        'navigation--mobile');
+    }
+  };
 
 }

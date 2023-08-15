@@ -1,5 +1,13 @@
 html {
-  font-size: 14px;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
 }
 
 body {
@@ -18,11 +26,4 @@ body {
   border-radius: 10px;
   margin-bottom: 1rem;
   width: 50%;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  max-width: 100%;
 }

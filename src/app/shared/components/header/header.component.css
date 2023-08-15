@@ -1,4 +1,4 @@
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -36,7 +36,7 @@ button {
   padding: 40px 40px;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .navbar .logo i {
@@ -96,11 +96,11 @@ button {
   cursor: pointer;
 }
 
-.subtitle{
+.subtitle {
   color: #0aa5ff;
 }
 
-@media (max-width: 53rem) {
+@media (max-width: 72rem) {
   .menu {
     display: none;
   }
@@ -108,3 +108,7 @@ button {
     display: block;
   }
 }
+
+.menu-btn {
+  cursor: pointer;
+} */
