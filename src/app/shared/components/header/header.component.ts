@@ -14,7 +14,7 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() { }
 
-  selectedLink: string = ''; // Enlace seleccionado
+  selectedLink: string = '';
   backgroundImages: { [key: string]: string } = {
     '': 'url("https://tirant.com/wp-content/uploads/2023/06/dia-mundial-del-medio-ambiente-face.png")',
     'Nosotros': 'url("https://di-sitebuilder-assets.s3.amazonaws.com/GMimages/gmMLP/chevrolet/Corvette/2023/Content-1.jpg")',
