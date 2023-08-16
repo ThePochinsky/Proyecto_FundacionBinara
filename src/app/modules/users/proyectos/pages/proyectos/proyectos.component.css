@@ -85,3 +85,19 @@ body {
 .articles article:hover img {
     transform: scale(1.5); 
 }
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.add-project-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
