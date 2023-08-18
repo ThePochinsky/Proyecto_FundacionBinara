@@ -1,4 +1,5 @@
 <div class="form-container">
+  <button class="close-button" (click)="onClose()">X</button>
   <h2>Registro de Proyecto</h2>
   <form>
     <div class="form-group">
@@ -49,6 +50,13 @@
       <label for="projectDueDate">Fecha de Fin</label>
       <input type="date" id="projectDueDate" name="projectDueDate" required>
     </div>
-    <button type="submit">Registrar Proyecto</button>
+    
+    
+    <div class="button-container">
+      
+      <button  class="submit-button" (click)="onClose()" type="submit">Registrar Proyecto</button>
+      <button  class="cancel-button" (click)="onClose()">Cancelar</button>
+  </div>
+
   </form>
 </div>

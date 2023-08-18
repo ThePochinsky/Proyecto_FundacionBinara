@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
-import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
+import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forChild(routes),
-    MatBottomSheetModule
+    MatDialogModule
   ],
   exports: [RouterModule]
 })

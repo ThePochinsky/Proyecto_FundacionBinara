@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-register-project',
@@ -6,6 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./register-project.component.css']
 })
 export class RegisterProjectComponent {
+  constructor(private dialogRef: MatDialogRef<RegisterProjectComponent>) { }
   Solonumero(event: any) {
     const input = event.target as HTMLInputElement;
     let value = input.value;
@@ -15,5 +17,9 @@ export class RegisterProjectComponent {
       value = value.replace(/\.+$/, '');
     }
     input.value = value;
+  }
+
+  onClose(): void {
+    this.dialogRef.close();
   }
 }

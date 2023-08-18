@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { MatDialog } from '@angular/material/dialog';
 import { RegisterProjectComponent } from 'src/app/modules/manager/register-project/pages/register-project/register-project.component';
 
 @Component({
@@ -8,16 +8,13 @@ import { RegisterProjectComponent } from 'src/app/modules/manager/register-proje
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent {
-  constructor(private bottomSheet: MatBottomSheet) {}
+  constructor(public dialog: MatDialog) { }
 
   abrirSheet() {
-    const sheetRef = this.bottomSheet.open(RegisterProjectComponent, {
-      // puedes pasar datos al sheet así:
-      // data: {nombre: 'Ejemplo', descripcion: 'Datos'}
-    });
-
-    sheetRef.afterDismissed().subscribe(() => {
-      console.log('El bottom sheet se cerró');
+    this.dialog.open(RegisterProjectComponent, {
+      width: '800px',
+      hasBackdrop: false,
+      height:'600px'
     });
   }
 }

@@ -7,7 +7,10 @@
     background-color: #f5f5f5;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
   }
+ 
+  
   
   .form-group {
     margin-bottom: 20px;
@@ -42,4 +45,72 @@
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
+
+  .cancel-button {
+    background-color: transparent;
+    border: 2px solid red;
+    color: red;
+    padding: 10px 15px;
+    margin-left: 10px; 
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.cancel-button:hover {
+    background-color: red;
+    color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  
+  background-color: #e74c3c;
+  color: white;            
+  
+  width: 30px;            
+  height: 30px;
+  border-radius: 50%;  
+  
+  border: none; 
+  font-weight: bold;
+  font-size: 1.5rem;        
+
+  display: flex;           
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;          
+  transition: background-color 0.3s; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-button:hover {
+  background-color: #c0392b; 
+}
+
+
+.submit-button {
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s; 
+}
+
+.submit-button:hover {
+    background-color: green;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;  /* Alinea horizontalmente */
+  gap: 1rem;  /* Espaciado entre los botones, ajusta según lo necesites */
+}
+
+
+
+ 
   
