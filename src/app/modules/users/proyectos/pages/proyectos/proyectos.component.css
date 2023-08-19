@@ -16,6 +16,39 @@ body {
     background-color: var(--secondary);
 }
 
+.article-container {
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 10px;
+    z-index: 1;
+}
+
+.edit-button, .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 30px; 
+    color: black;
+    padding: 5px; 
+    border: 2px solid white;
+    background-color: white;
+}
+
+.edit-button:hover, .delete-button:hover {
+    color: red;
+}
+
+
+
 .background {
     width: 100%;
     display: flex;
@@ -84,4 +117,20 @@ body {
 
 .articles article:hover img {
     transform: scale(1.5); 
+}
+
+.add-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.add-project-button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
