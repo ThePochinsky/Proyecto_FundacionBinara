@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { ProyectosRoutingModule } from './proyectos-routing.module';
 import { ProyectosComponent } from './pages/proyectos/proyectos.component';
 
 
@@ -11,7 +10,6 @@ import { ProyectosComponent } from './pages/proyectos/proyectos.component';
   ],
   imports: [
     CommonModule,
-    ProyectosRoutingModule
   ]
 })
 export class ProyectosModule { }

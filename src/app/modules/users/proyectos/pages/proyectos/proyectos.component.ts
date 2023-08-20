@@ -8,6 +8,7 @@ import { RegisterProjectComponent } from 'src/app/modules/manager/register-proje
   styleUrls: ['./proyectos.component.css']
 })
 export class ProyectosComponent {
+  
   constructor(public dialog: MatDialog) { }
 
   abrirSheet() {

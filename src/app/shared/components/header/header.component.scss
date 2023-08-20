@@ -1,3 +1,5 @@
+@import '../../../../app/core/styles/global-styles.scss';
+
 *,
 *::before,
 *::after {
@@ -8,7 +10,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #010101;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: $fuente_principal;
 }
 
 a {
@@ -88,13 +90,13 @@ button {
 }
 
 .log-in:hover {
-  scale: 1.05;
+  transform: scale(1.05);
   color: #fff;
   background-color: #0aa5ff;
 }
 
 .log-in:active {
-  scale: 0.95;
+  transform: scale(0.95);
 }
 
 /* DROPDOWN MENU */
