@@ -52,4 +52,7 @@ export class HeaderComponent implements OnInit {
     });
   }
 
+  goToProjects() {
+    this.router.navigate(['usuario/proyectos']);
+  }
 }
