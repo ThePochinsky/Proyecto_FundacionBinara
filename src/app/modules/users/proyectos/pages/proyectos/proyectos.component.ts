@@ -9,7 +9,7 @@ import { RegisterProjectComponent } from 'src/app/modules/manager/register-proje
 })
 export class ProyectosComponent {
   constructor(public dialog: MatDialog) { }
-
+  
   abrirSheet() {
     this.dialog.open(RegisterProjectComponent, {
       width: '800px',
@@ -17,4 +17,5 @@ export class ProyectosComponent {
       height:'600px'
     });
   }
+  
 }

@@ -7,6 +7,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   styleUrls: ['./register-project.component.css']
 })
 export class RegisterProjectComponent {
+  
   constructor(private dialogRef: MatDialogRef<RegisterProjectComponent>) { }
   Solonumero(event: any) {
     const input = event.target as HTMLInputElement;

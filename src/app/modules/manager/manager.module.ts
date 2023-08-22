@@ -5,11 +5,13 @@ import { ManagerRoutingModule } from './manager-routing.module';
 import { WelcomeManagerComponent } from './welcome-manager/welcome-manager.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { EstadisticaProjectComponent } from './pages/estadistica-project/estadistica-project.component';
 
 
 @NgModule({
   declarations: [
-    WelcomeManagerComponent
+    WelcomeManagerComponent,
+    EstadisticaProjectComponent
   ],
   imports: [
     CommonModule,
