@@ -1,10 +1,12 @@
+import { Mapas } from "./mapas";
+
 export class Proyectos {
 
     id?: number;
     titulo?: string;
     objetivoPrincipal?: string;
     objetivosSecundarios?: string;
-    mapas?: any;
+    mapas?: Mapas[];
     parrafoUno?: string;
     parrafoDos?: string;
     parrafoTres?: string;
