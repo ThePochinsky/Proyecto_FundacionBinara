@@ -55,4 +55,7 @@ export class HeaderComponent implements OnInit {
   goToProjects() {
     this.router.navigate(['user/projects']);
   }
+  goToEstadisticas(){
+    this.router.navigate(['manager/dashboard'])
+  }
 }
