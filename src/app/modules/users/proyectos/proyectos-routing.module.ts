@@ -5,7 +5,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 const routes: Routes = [
   {
-    path: 'proyectos',
+    path: 'projects',
     component: ProyectosComponent
   }
 ];

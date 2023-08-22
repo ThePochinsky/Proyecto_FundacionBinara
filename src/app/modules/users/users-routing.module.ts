@@ -5,6 +5,10 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./proyectos/proyectos.module').then(m => m.ProyectosModule)
+  },
+  {
+    path: 'ver',
+    loadChildren: () => import('./ver-proyecto/ver-proyecto.module').then(m => m.VerProyectoModule)
   }
 ];
 
