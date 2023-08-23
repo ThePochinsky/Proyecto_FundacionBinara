@@ -1,29 +1,55 @@
-
 .project-details {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 10px;
+    font-family: 'Arial', sans-serif;
     padding: 20px;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-@media screen and (max-width: 600px) {
-    .project-details {
-        padding: 10px;
-    }
+.image-container {
+    float: left;
+    margin-right: 20px;
 }
-.date::before {
-    content: "\1F4C5"; /* Unicode character for a calendar icon */
-    display: inline-block;
-    margin-right: 5px;
-    font-size: 18px;
+
+.project-image {
+    max-width: 200px;
+    border-radius: 10px;
 }
-.amount::before {
-    content: "$";
-    display: inline-block;
-    margin-right: 5px;
+
+.text-content {
+    overflow: auto;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.paragraphs p {
+    margin-top: 10px;
+}
+
+.budget .negrita {
     font-weight: bold;
+    margin-top: 10px;
 }
-.negrita{
-    font-weight: bold;
+
+.progress {
+    background-color: #eaeaea;
+    border-radius: 5px;
+    height: 20px;
 }
+
+.progress-bar {
+    background-color: #4CAF50;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+}
+

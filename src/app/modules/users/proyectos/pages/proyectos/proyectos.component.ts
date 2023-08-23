@@ -28,7 +28,6 @@ export class ProyectosComponent implements OnInit {
     this.projectService.getActiveProjects().subscribe(
       proyectos => {
         this.projects = proyectos;
-        console.log(this.projects?.[1].mapas?.[0].lugar);
       },
       error => {
         console.error('Error obteniendo proyectos:', error);
@@ -55,10 +54,12 @@ export class ProyectosComponent implements OnInit {
 
 
   detailsProject(projectId: number | undefined) {
+
     if (projectId !== undefined) {
         this.router.navigate(['user/ver/proyecto', projectId]);
     } else {
     }
+    
 }
 
 

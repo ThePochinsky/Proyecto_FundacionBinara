@@ -2,7 +2,7 @@ import { Mapas } from "./mapas";
 
 export class Proyectos {
 
-    id?: number;
+    _id?: number;
     titulo?: string;
     objetivoPrincipal?: string;
     objetivosSecundarios?: string;

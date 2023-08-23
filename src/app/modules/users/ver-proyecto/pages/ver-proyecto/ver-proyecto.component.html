@@ -1,18 +1,43 @@
 <div class="project-details">
-    <h1>Proyecto- Fundacion Binara</h1>
-    <p  class="date negrita">2023/08/19<span> - </span>2023/08/19</p>
+
+    <!-- Encabezado -->
+    <div class="header">
+        <h1>{{ proyecto.titulo }}
+        </h1>
+        <p class="date"><strong>Inicio:</strong> 2023/08/19 | <strong>Final:</strong> 2023/08/19</p>
+    </div>
+    
     <hr>
-    <br>
-    <div>
-        <p>Objetivo principal: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit justo. Nullam quis lorem eget ndfhdsf jhsdfhdf hsdgdf dsjdf kjfhsdjfd f  jfhgdsfgfd jdfgdfajh jhsdgsabfd sdjhfgdfsdgfag sdhjfbhasfdhfas dhfbafha bfhdhf .</p>
-        <p>Objetivos Especificos :Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit justo. Nullam quis lorem eget.</p>
+
+    <!-- Descripción del proyecto -->
+    <div class="description">
         <div class="image-container">
-            <img src="assets/img/binara.png" alt="Imagen del proyecto">
+            <img src="assets/img/binara.png" alt="Imagen del proyecto" class="project-image">
         </div>
-        <p>Parrafo uno: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit justo. Nullam quis lorem eget.</p>
-        <p>Parrafo dos:Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit justo. Nullam quis lorem eget.</p>
-        <p>Parrafo tres: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget suscipit justo. Nullam quis lorem eget.</p>
-        <p class="negrita"><span>Presupuesto: $</span> 8.0000</p>
-        <p class="negrita"><span>Recolectado: $</span> 8.0000</p>
+        
+        <div class="text-content">
+            <p><strong>Objetivo principal:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <p><strong>Objetivos Específicos:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </div>
+    </div>
+
+    <!-- Detalles adicionales -->
+    <div class="additional-details">
+        <div class="paragraphs">
+            <p>Parrafo uno: Lorem ipsum...</p>
+            <p>Parrafo dos: Lorem ipsum...</p>
+            <p>Parrafo tres: Lorem ipsum...</p>
+        </div>
+        
+        <div class="budget">
+            <p class="negrita"><span><i class="fas fa-dollar-sign"></i> Presupuesto:</span> $8.0000</p>
+            <p class="negrita"><span><i class="fas fa-hand-holding-usd"></i> Recolectado:</span> $9.0000</p>
+            
+            <!-- Barra de progreso -->
+            <div class="progress">
+                <div class="progress-bar" style="width: 100%;">100%</div>
+            </div>
+        </div>
     </div>
 </div>
+
