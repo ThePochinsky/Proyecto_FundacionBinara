@@ -3,53 +3,55 @@
     padding: 20px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
-.image-container {
-    float: left;
-    margin-right: 20px;
+.details-container {
+    text-align: center;
+    width: 100%;
 }
 
-.project-image {
-    max-width: 200px;
-    border-radius: 10px;
-}
-
-.text-content {
-    overflow: auto;
-}
-
-.description {
+.image-and-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
     margin-bottom: 20px;
 }
 
-.paragraphs p {
-    margin-top: 10px;
+.image-column {
+    flex: 1;
+    margin-right: 20px;
+    text-align: right;
+    margin-left: 150px;
 }
 
-.budget .negrita {
-    font-weight: bold;
-    margin-top: 10px;
+.details-column {
+    flex: 1;
+    text-align: left;
+    margin-right: 180px;
+    margin-left: 10px;
 }
 
-.progress {
-    background-color: #eaeaea;
-    border-radius: 5px;
-    height: 20px;
+.image-container {
+    margin-top: 20px;
+    max-width: 120%;
 }
 
-.progress-bar {
-    background-color: #4CAF50;
-    height: 100%;
-    line-height: 20px;
+.titutlo {
     text-align: center;
-    color: white;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
+.distanciaDetalle{
+    margin-left: 20px;
+    background-color: #f2f2f2;
+}
+
+.titulodetalle{
+  margin-bottom: 10px;
+  text-align: center;
+}

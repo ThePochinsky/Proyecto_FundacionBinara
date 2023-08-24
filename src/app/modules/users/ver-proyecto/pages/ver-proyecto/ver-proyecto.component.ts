@@ -2,12 +2,15 @@ import { Component } from '@angular/core';
 import { Proyectos } from 'src/app/core/models/proyectos';
 import { ProyectosService } from 'src/app/core/services/proyectos.service';
 import { ActivatedRoute } from '@angular/router';
+import { DatePipe } from '@angular/common';
+
 
 
 @Component({
   selector: 'app-ver-proyecto',
   templateUrl: './ver-proyecto.component.html',
-  styleUrls: ['./ver-proyecto.component.css']
+  styleUrls: ['./ver-proyecto.component.css'],
+  providers: [DatePipe]
 })
 export class VerProyectoComponent {
   proyecto!: Proyectos;
@@ -34,5 +37,8 @@ export class VerProyectoComponent {
     });
     
     
+  }
+  getProvincia(lugar: any): string {
+    return lugar.split(';')[2];
   }
 }
